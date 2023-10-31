@@ -10,7 +10,7 @@ connectToDB();
 app.use(bodyParserMiddleware)
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000','https://rsjchatapp.netlify.app'],
   credentials: true, 
 }))
 
